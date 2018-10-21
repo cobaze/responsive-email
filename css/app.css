@@ -1,0 +1,13 @@
+table.first-row{
+    border: solid red 1px;
+}
+
+th.logo-img{
+    padding-bottom: 0px !important;
+}
+
+/* Small only */
+@media screen and (max-width: 596px) {
+
+
+}
