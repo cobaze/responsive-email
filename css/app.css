@@ -1,19 +1,99 @@
-table.first-row{
-    border: solid red 1px;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #153643 !important;
+    color: rgb(21, 54, 67);
+    Margin: 0px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px !important;
 }
 
-th.remove-bottom-padding{
+th.remove-bottom-padding {
     padding-bottom: 0px !important;
 }
 
-th.add-padding-right{
-    padding-right: 16px !important;
-    letter-spacing: 0.5px;
+th.add-padding {
+    padding: 20px 20px 30px 20px !important;
+    box-sizing: border-box;
+}
+
+.padding-no-bottom {
+    padding: 30px 20px 0px 20px !important;
+    box-sizing: border-box;
+}
+
+.padding-no-right {
+    padding: 0px 20px 20px 20px !important;
+    box-sizing: border-box;
+}
+
+.padding-no-left {
+    padding: 40px 20px 20px 0px !important;
+    box-sizing: border-box;
+}
+
+.text-one,
+.text-two {
+    line-height: 20px !important;
+    letter-spacing: 0.3px;
     hyphens: none;
+    font-size: 13px;
+}
+
+a.first-cta,
+td.first-cta {
+    border: 0 solid #ef6d22 !important;
+    background: #ef6d22 !important;
+    padding: 10px 16px 10px 16px;
+    text-align: center;
+}
+
+a.first-cta:hover,
+a.first-cta:focus,
+a.first-cta:focus-within {
+    background: #9c4a1a !important;
+}
+
+table.remove-margin {
+    Margin: 0px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px !important;
+}
+
+h1.first-header,
+h2.second-header {
+    Margin-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+h1.first-header {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+h2.second-header {
+    font-size: 13px;
+    font-weight: bold;
 }
 
 /* Small only */
 @media screen and (max-width: 596px) {
 
+    .padding-no-left {
+        padding: 0px 0px 30px 0px !important;
+        box-sizing: border-box;
+    }
+
+    .padding-no-bottom {
+        padding: 30px 20px 0px 20px !important;
+        box-sizing: border-box;
+    }
+
+    .padding-no-right {
+        padding: 0px 20px 30px 20px !important;
+        box-sizing: border-box;
+    }
 
 }
