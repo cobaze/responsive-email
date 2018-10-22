@@ -2,8 +2,14 @@ table.first-row{
     border: solid red 1px;
 }
 
-th.logo-img{
+th.remove-bottom-padding{
     padding-bottom: 0px !important;
+}
+
+th.add-padding-right{
+    padding-right: 16px !important;
+    letter-spacing: 0.5px;
+    hyphens: none;
 }
 
 /* Small only */
