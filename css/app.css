@@ -11,6 +11,11 @@ h6 {
     margin: 0px 0px 0px 0px !important;
 }
 
+a {
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+
 th.remove-bottom-padding {
     padding-bottom: 0px !important;
 }
@@ -20,23 +25,23 @@ th.add-padding {
     box-sizing: border-box;
 }
 
-.padding-no-bottom {
+th.padding-no-bottom {
     padding: 30px 20px 0px 20px !important;
     box-sizing: border-box;
 }
 
-.padding-no-right {
+th.padding-no-right {
     padding: 0px 20px 20px 20px !important;
     box-sizing: border-box;
 }
 
-.padding-no-left {
+th.padding-no-left {
     padding: 40px 20px 20px 0px !important;
     box-sizing: border-box;
 }
 
-.text-one,
-.text-two {
+p.text-one,
+p.text-two {
     line-height: 20px !important;
     letter-spacing: 0.3px;
     hyphens: none;
@@ -78,22 +83,89 @@ h2.second-header {
     font-weight: bold;
 }
 
+th.btm-pad {
+    padding-bottom: 30px !important;
+}
+
+table.footer {
+    background-color: #2d3d48 !important;
+}
+
+p.copy-text {
+    color: #ffffff !important;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    margin-bottom: 15px !important;
+    Margin-bottom: 15px !important;
+}
+
+p.reg-text,
+p.phone-num,
+p.web-ad,
+p.mail-ad {
+    color: #ffffff !important;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+p.mail-ad a,
+p.phone-num a,
+p.web-ad a,
+p.mail-ad a {
+    color: #FFFFFF;
+}
+
+th.copyreg {
+    padding: 45px 20px 25px 20px !important;
+}
+
+th.social {
+    padding: 30px 20px 25px 20px !important;
+}
+
+th.linkedin,
+th.googleplus,
+th.twitter,
+th.facebook {
+    width: 36px;
+}
+
 /* Small only */
 @media screen and (max-width: 596px) {
 
-    .padding-no-left {
+    th.padding-no-left {
         padding: 0px 0px 30px 0px !important;
         box-sizing: border-box;
     }
 
-    .padding-no-bottom {
+    th.padding-no-bottom {
         padding: 30px 20px 0px 20px !important;
         box-sizing: border-box;
     }
 
-    .padding-no-right {
+    th.padding-no-right {
         padding: 0px 20px 30px 20px !important;
         box-sizing: border-box;
+    }
+
+    p.phone-num,
+    p.mail-ad {
+        width: 110px;
+        display: inline;
+        padding-left: 32px;
+    }
+
+    p.web-ad {
+        display: inline;
+    }
+
+    th.copyreg {
+        padding-bottom: 0px !important;
+    }
+
+    table.social-holder {
+        margin-top: 20px !important;
     }
 
 }
