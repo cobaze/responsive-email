@@ -1,60 +1,199 @@
 <!-- Emails use the XHTML Strict doctype -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-  <!-- The character set should be utf-8 -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width"/>
-  <!-- Link to the email's CSS, which will be inlined into the email -->
-  <link rel="stylesheet" href="/css/foundation-emails.css">
-  <style>
-    <!-- Your CSS to inline should be added here -->
-  </style>
+    <!-- The character set should be utf-8 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>BNR EMail</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/foundation-emails.css">
+
+    <style>
+
+        p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2A2112 !important;
+}
+
+.center-class{
+    margin: 0 auto !important;
+    Margin: 0 auto !important;
+}
+
+.float-right-class{
+    float: right !important;
+}
+
+h1.body-text-one{
+    font-size: 20px !important;
+}
+
+table.first-header {
+    background-color: #2A2112 !important;
+}
+
+th.left-header {
+    padding-top: 30px !important;
+}
+
+th.right-header {
+    padding: 15px 0px 15px 0px !important;
+}
+
+p.header-text {
+    color: #ffffff !important;
+    font-size: 16px !important;
+    padding-top: 10px !important;
+}
+
+img.bnr-logo {
+    width: 140px !important;
+}
+
+img.marketing-logo {
+    width: 55px;
+    float: right !important;
+}
+
+th.remove-padding-bottom {
+    padding-bottom: 0px !important;
+}
+
+/* Small only */
+@media screen and (max-width: 596px) {
+    th.left-header {
+        padding-top: 25px !important;
+    }
+
+    th.right-header {
+        padding: 15px 0px 15px 0px !important;
+    }
+
+    p.header-text {
+        color: #ffffff !important;
+        font-size: 14px !important;
+        padding-top: 10px !important;
+    }
+
+    img.bnr-logo {
+        width: 150px !important;
+    }
+
+    img.marketing-logo {
+        width: 50px !important;
+        float: right !important;
+    }
+}
+
+
+    </style>
 </head>
 
 <body>
-  <!-- Wrapper for the body of the email -->
-  <table class="body" data-made-with-foundation>
-    <tr>
-      <!-- The class, align, and <center> tag center the container -->
-      <td class="float-center" align="center" valign="top">
-        <center>
-          <table align="center" class="container">
-              <tbody>
-                  <tr>
-                      <td>
-                          <table class="row">
-                             <tbody>
-                                  <tr>
-                                      <th class="large-offset-3 small-12 large-3 columns first">
-                                         <table>
-                                            <tr>
-                                               <th>
-                                                   <img src="https://placehold.it/150x150/999999/&amp;text=offset column" alt="">
-                                               </th>
-                                            </tr>
-                                          </table>
-                                      </th>
-                                      <th class="small-12 large-3 columns last">
-                                         <table>
-                                            <tr>
-                                               <th>
-                                                   <img src="https://placehold.it/150x150/999999/&amp;text=offset column" alt="">
-                                               </th>
-                                            </tr>
-                                          </table>
-                                      </th>
-                                  </tr>
-                              </tbody>
-                          </table>
-                      </td>
+    <!-- Wrapper for the body of the email -->
+    <table class="body" data-made-with-foundation>
+        <tr>
+            <td class="float-center" align="center" valign="top">
+                <center>
+                    <!-- This column aka First table adds a 16px spacing to the top of e-mail-->
+                    <table class="spacer float-center" style="border: solid red 1px">
+                        <tbody>
+                            <tr>
+                                <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- End First Table -->
 
-                  </tr>
-              </tbody>
-          </table>
-        </center>
-      </td>
-    </tr>
-  </table>
-</body>
-</html>
+                    <!--This column aka Second Table houses the logo aligned to the rleft and the icon to the right-->
+
+                    <table align="center" class="container first-header">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table class="row">
+                                        <tbody>
+                                            <tr>
+                                                <th class="small-6 large-6 colums first right-header">
+                                                    <table>
+                                                        <tr>
+                                                            <th>
+                                                                <img class="bnr-logo" src="./imgs/bnr-logo.png" alt="Big Nerd Ranch, Big Nerd Ranch Logo, BNR, BNR Logo">
+                                                            </th>
+                                                            <th class="expander"></th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+
+                                                <th class="small-6 large-6 colums last right-header">
+                                                    <table>
+                                                        <tr>
+                                                            <th>
+                                                                <img class="bnr-logo" src="./imgs/bnr-logo.png" alt="Big Nerd Ranch, Big Nerd Ranch Logo, BNR, BNR Logo">
+                                                            </th>
+                                                            <th class="expander"></th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="float-center container">
+                        <tbody>
+                            <tr>
+                                <td height="30px" style="font-size:30px;line-height:30px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!--This column aka Second Table houses the logo aligned to the rleft and the icon to the right-->
+
+                    <table align="center" class="container float-center">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table class="row">
+                                        <tbody>
+                                            <tr>
+                                                <th class="small-12 large-12 first new-nerd">
+                                                    <table class="center-class">
+                                                        <tr>
+                                                            <th>
+                                                                <h1 class="body-text-one text-center">MEET OUR NEWEST NERD</h1>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="float-center container">
+                        <tbody>
+                            <tr>
+                                <td height="30px" style="font-size:30px;line-height:30px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </center>
+            </td>
+        </tr>
+    </table>
+</body></html>
